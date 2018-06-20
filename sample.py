@@ -4,7 +4,7 @@ from numpy import argmax
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 import nltk
-fp=open(r'C:\Users\kansa\Desktop\TexttoImage\text_to_scene\text.txt','r',encoding="utf8")
+fp=open(r'text.txt','r',encoding="utf8")
 paragraph=fp.read()
 paragraph=paragraph.lower()
 fp.close()
