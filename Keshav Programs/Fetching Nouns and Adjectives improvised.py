@@ -43,9 +43,9 @@ while (count!=(len(l))):
             d[l[count]]=z
             print("done")
         else:
-            d[l[count]][0] +=1
-            d[l[count]].extend(z)
-        z=[]
+            d[l[count]][0] +=z[0]
+            d[l[count]].extend(z[1:])
+        z=[1]
     count+=1
 print(d)
 fp.close()
