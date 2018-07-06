@@ -553,9 +553,3 @@ cot
 desktop
 trashcan
 wallpaper
-telephone
-ashcan
-phone
-cycle
-bicycle
-cabinet
