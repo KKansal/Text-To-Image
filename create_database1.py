@@ -2,6 +2,7 @@
 
 fp = open("files.txt", 'r')
 fout = open("nouns_synid.txt", 'w')
+fnouns = open("Nouns.txt", 'a')
 count = 0
 while count < 55:
 	id = fp.readline().strip('\n')
@@ -26,9 +27,12 @@ while count < 55:
 	fout.write(" ")
 	for i in s:
 		fout.write(i)
+		fnouns.write(i)
 		fout.write(",")
+		fnouns.write("\n")
 	fout.write('\n\n')
 	count += 1
 
 fp.close()
 fout.close()
+fnouns.close()
